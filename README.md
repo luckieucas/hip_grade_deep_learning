@@ -39,10 +39,4 @@ python test.py
 ## Citing this work
 
 ```
-@article{berthelot2019remixmatch,
-    title={ReMixMatch: Semi-Supervised Learning with Distribution Alignment and Augmentation Anchoring},
-    author={David Berthelot and Nicholas Carlini and Ekin D. Cubuk and Alex Kurakin and Kihyuk Sohn and Han Zhang and Colin Raffel},
-    journal={arXiv preprint arXiv:1911.09785},
-    year={2019},
-}
 ```
