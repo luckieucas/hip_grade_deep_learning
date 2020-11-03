@@ -1,0 +1,9 @@
+CLASS_NUM_DICTS={
+    'onfh_3cls':[1066,259,659],
+    #1,1.3,1.1,1.5,1.2,1,1.5
+    'hip_7cls':[1,1.3,1.1,1.5,1.2,1,1.5]
+}
+CLAss_NAMES_DICTS={
+    'onfh_3cls':['Normal','ONFH_I','ONFH_II'],
+    'hip_7cls':["Normal","OA_I","OA_II","OA_III","ONFH_II","ONFH_III","ONFH_IV"]
+}
