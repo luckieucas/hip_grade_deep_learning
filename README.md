@@ -6,7 +6,9 @@ code for the paper: clinical grade of hip x-ray radiographs using deep learning
 ### RequireMents
 
 ```bash
-python 3.7
+python 3.7.8
+pytorch 1.4.0
+CUDA 10.1
 ```
 
 
