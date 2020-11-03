@@ -3,7 +3,7 @@ code for the paper: clinical grade of hip x-ray radiographs using deep learning
 
 ## Setup
 
-### RequireMents
+### Requirements
 
 ```bash
 python 3.7.8
@@ -28,11 +28,11 @@ python main.py --model_id xception_fold1 --num_class 3  --bnm_loss 0 --bnm_loss
 
 test hip 7cls model:
 ```bash
-python test.py
+python test_7cls.py
 ```
 test onfh 3cls model:
 ```bash
-python test.py
+python test_3cls.py
 ```
 
 
