@@ -26,6 +26,7 @@ python main.py --model_id xception_onfh_fold1 --num_class 3  --bnm_loss 0 --bnm
 ```
 ### Test model
 download 7 classification model from
+
 download 3classification model from https://drive.google.com/file/d/1Ens9erEWUtoXDuHM_OJ-GU0-nwiklHlI/view?usp=sharing
 
 test hip 7cls model:
