@@ -12,7 +12,7 @@ pythont 3.7
 
 ## Running
 
-### Setup
+### Train model
 
 All commands must be ran from the project root. The following environment variables must be defined:
 ```bash
@@ -20,7 +20,7 @@ export ML_DATA="path to where you want the datasets saved"
 export PYTHONPATH=$PYTHONPATH:.
 ```
 
-### Example
+### Test model
 
 For example, training a remixmatch with 32 filters and 4 augmentations on cifar10 shuffled with `seed=3`, 250 labeled samples and 5000
 validation samples:
