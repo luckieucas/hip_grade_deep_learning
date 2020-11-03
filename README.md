@@ -24,12 +24,14 @@ python main.py --model_id xception_fold1 --num_class 3  --bnm_loss 0 --bnm_loss
 ```
 ### Test model
 
-For example, training a remixmatch with 32 filters and 4 augmentations on cifar10 shuffled with `seed=3`, 250 labeled samples and 5000
-validation samples:
+test hip 7cls model:
 ```bash
-CUDA_VISIBLE_DEVICES=0 python cta/cta_remixmatch.py --filters=32 --K=4 --dataset=cifar10.3@250-5000 --w_match=1.5 --beta=0.75 --train_dir ./experiments/remixmatch
+python test.py
 ```
-
+test onfh 3cls model:
+```bash
+python test.py
+```
 Available labelled sizes are 40, 100, 250, 1000, 4000.
 For validation, available sizes are 1, 5000.
 Possible shuffling seeds are 1, 2, 3, 4, 5 and 0 for no shuffling (0 is not used in practiced since data requires to be
