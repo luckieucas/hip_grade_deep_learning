@@ -6,7 +6,7 @@ code for the paper: clinical grade of hip x-ray radiographs using deep learning
 ### RequireMents
 
 ```bash
-pythont 3.7
+python 3.7
 ```
 
 
@@ -32,10 +32,6 @@ test onfh 3cls model:
 ```bash
 python test.py
 ```
-Available labelled sizes are 40, 100, 250, 1000, 4000.
-For validation, available sizes are 1, 5000.
-Possible shuffling seeds are 1, 2, 3, 4, 5 and 0 for no shuffling (0 is not used in practiced since data requires to be
-shuffled for gradient descent to work properly).
 
 
 ## Citing this work
