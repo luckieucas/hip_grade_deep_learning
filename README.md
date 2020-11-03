@@ -18,11 +18,11 @@ CUDA 10.1
 
 train hip 7 classes model:
 ```bash
-python main.py --model_id xception_test_code_hip --num_class 7 --bnm_loss 0 --bnm_loss_weight 0.0 --gpu 0,1 --root_path ../data/hip_7cls/training_data --train_file ../data/hip_7cls/training.txt --test_file ../data/hip_7cls/testing.txt --task hip_7cls
+python main.py --model_id xception_hip --num_class 7 --bnm_loss 0 --bnm_loss_weight 0.0 --gpu 0,1 --root_path ../data/hip_7cls/training_data --train_file ../data/hip_7cls/training.txt --test_file ../data/hip_7cls/testing.txt --task hip_7cls
 ```
 train onfh 3 classes model:
 ```bash
-python main.py --model_id xception_fold1 --num_class 3  --bnm_loss 0 --bnm_loss_weight 0.0 --gpu 0,1
+python main.py --model_id xception_onfh_fold1 --num_class 3  --bnm_loss 0 --bnm_loss_weight 0.0 --gpu 0,1
 ```
 ### Test model
 
