@@ -5,8 +5,7 @@ from torchvision import transforms, utils
 import random 
 from torch import nn 
 from dataloader import data_loader 
-from trainer import train
-from trainer_new import Trainer
+from trainer import Trainer
 import utils
 import wandb
 import torchvision

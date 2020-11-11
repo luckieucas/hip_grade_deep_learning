@@ -16,7 +16,7 @@ from DatasetGenerator import DatasetGenerator
 label_7cls=["normal","oa_I","oa_II","oa_III","onfh_II","onfh_III","onfh_IV"]
 
 #load trained model 
-modelCheckpoint = torch.load("../models/xception_test_code_hip/epoch_10_.pth.tar") # 3cls best model
+modelCheckpoint = torch.load("../code_git/hip_7cls_model.pth.tar") # 3cls best model
 model = pretrainedmodels.__dict__['xception'](num_classes=1000,
                                             pretrained='imagenet')
 num_fc = model.last_linear.in_features
@@ -25,8 +25,8 @@ model = torch.nn.DataParallel(model).cuda()
 model.load_state_dict(modelCheckpoint['state_dict'])
 
 #prepare dataset
-test_data_path = '../data/hip_7cls/training_data/'
-test_file = '../data/hip_7cls/testing.txt'
+test_data_path = './sample_images/hip_7cls/test/'
+test_file = './sample_images/hip_7cls/test.txt'
 mean = 0.605
 std = 0.156
 mean = [mean, mean, mean]

@@ -16,7 +16,7 @@ from DatasetGenerator import DatasetGenerator
 label_3cls = ["Normal","ONFH I","ONFH II"]
 
 #load trained model 
-modelCheckpoint = torch.load("../models/xception_fold1/epoch_2_.pth.tar") # 3cls best model
+modelCheckpoint = torch.load("../code_git/onfh_3cls_model.pth.tar") # 3cls best model
 model = pretrainedmodels.__dict__['xception'](num_classes=1000,
                                             pretrained='imagenet')
 num_fc = model.last_linear.in_features
@@ -25,8 +25,8 @@ model = torch.nn.DataParallel(model).cuda()
 model.load_state_dict(modelCheckpoint['state_dict'])
 
 #prepare dataset
-test_data_path = '../data/onfh_3cls/training_data/'
-test_file = '../data/onfh_3cls/testing_fold1.txt'
+test_data_path = './sample_images/onfh_3cls/test/'
+test_file = './sample_images/onfh_3cls/test.txt'
 mean = 0.605
 std = 0.156
 mean = [mean, mean, mean]
