@@ -16,7 +16,7 @@ from DatasetGenerator import DatasetGenerator
 label_7cls=["normal","oa_I","oa_II","oa_III","onfh_II","onfh_III","onfh_IV"]
 
 #load trained model 
-modelCheckpoint = torch.load("../code_git/hip_7cls_model.pth.tar") # 3cls best model
+modelCheckpoint = torch.load("./models/hip_7cls_model.pth.tar") # 3cls best model
 model = pretrainedmodels.__dict__['xception'](num_classes=1000,
                                             pretrained='imagenet')
 num_fc = model.last_linear.in_features

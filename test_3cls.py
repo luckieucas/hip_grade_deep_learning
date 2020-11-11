@@ -16,7 +16,7 @@ from DatasetGenerator import DatasetGenerator
 label_3cls = ["Normal","ONFH I","ONFH II"]
 
 #load trained model 
-modelCheckpoint = torch.load("../code_git/onfh_3cls_model.pth.tar") # 3cls best model
+modelCheckpoint = torch.load("./models/onfh_3cls_model.pth.tar") # 3cls best model
 model = pretrainedmodels.__dict__['xception'](num_classes=1000,
                                             pretrained='imagenet')
 num_fc = model.last_linear.in_features
